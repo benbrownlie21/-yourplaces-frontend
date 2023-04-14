@@ -35,7 +35,7 @@ const UpdatePlace = () => {
         const fetchPlace = async () => {
             try {
                 const responseData = await sendRequest(
-                    `http://localhost:5000/api/places/${placeId}`
+                    `${process.env.REACT_APP_BACKEND_URL}/places/${placeId}`
                 );
                 setLoadedPlace(responseData.place);
                 setFormData(
@@ -61,7 +61,7 @@ const UpdatePlace = () => {
         event.preventDefault();
         try {
             await sendRequest(
-                `http://localhost:5000/api/places/${placeId}`, 
+                `${process.env.REACT_APP_BACKEND_URL}/places/${placeId}`, 
                 'PATCH', 
                 JSON.stringify({
                     title: formState.inputs.title.value,
@@ -122,6 +122,9 @@ const UpdatePlace = () => {
                     />
                     <Button type="submit" disabled={!formState.isValid}>
                         UPDATE PLACE
+                    </Button>
+                    <Button inverse to={`/${auth.userId}/places`}>
+                        BACK
                     </Button>
                 </form>)}
         </React.Fragment>

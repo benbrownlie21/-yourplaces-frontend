@@ -32,7 +32,7 @@ const PlaceItem = (props) => {
     setShowConfirmModal(false);
     try {
       await sendRequest(
-        `http://localhost:5000/api/places/${props.id}`,
+        process.env.REACT_APP_BACKEND_URL + `/places/${props.id}`,
         "DELETE",
         null,
         {
@@ -68,7 +68,7 @@ const PlaceItem = (props) => {
             <Button inverse onClick={cancelDeleteHandler}>
               CANCEL
             </Button>
-            <Button inverse onClick={confirmDeleteHandler}>
+            <Button danger onClick={confirmDeleteHandler}>
               DELETE
             </Button>
           </React.Fragment>
@@ -81,7 +81,7 @@ const PlaceItem = (props) => {
           {isLoading && <LoadingSpinner asOverLay />}
           <div className="place-item__image">
             <img
-              src={`http://localhost:5000/${props.image}`}
+              src={`${process.env.REACT_APP_ASSET_URL}/${props.image}`}
               alt={props.title}
             />
           </div>
@@ -101,7 +101,7 @@ const PlaceItem = (props) => {
             )}
 
             {auth.userId === props.creatorId && (
-              <Button inverse onClick={showDeleteWarningHandler}>
+              <Button danger onClick={showDeleteWarningHandler}>
                 DELETE
               </Button>
             )}

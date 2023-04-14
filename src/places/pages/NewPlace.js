@@ -50,7 +50,7 @@ const NewPlace = () => {
       formData.append("description", formState.inputs.description.value);
       formData.append("address", formState.inputs.address.value);
       formData.append("image", formState.inputs.image.value);
-      await sendRequest("http://localhost:5000/api/places", "POST", formData, {
+      await sendRequest(process.env.REACT_APP_BACKEND_URL + `/places`, "POST", formData, {
         Authorization: "Bearer " + auth.token
       });
       history.push("/");
@@ -70,7 +70,6 @@ const NewPlace = () => {
           validators={[VALIDATOR_REQUIRE()]}
           errorText="Please enter a valid title"
           onInput={inputHandler}
-          placeholder="Input title here..."
         />
         <Input
           id="address"
@@ -89,7 +88,7 @@ const NewPlace = () => {
           onInput={inputHandler}
         />
         <ImageUpload id="image" onInput={inputHandler} />
-        <Button type="submit" disabled={!formState.isValid}>
+        <Button inverse type="submit" disabled={!formState.isValid}>
           ADD PLACE
         </Button>
       </form>
