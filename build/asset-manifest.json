@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8bd363ac.css",
+    "main.js": "/static/js/main.2ed819d0.js",
+    "static/css/774.2ab82b2b.chunk.css": "/static/css/774.2ab82b2b.chunk.css",
+    "static/js/774.efe4360e.chunk.js": "/static/js/774.efe4360e.chunk.js",
+    "static/css/492.70b878c0.chunk.css": "/static/css/492.70b878c0.chunk.css",
+    "static/js/492.cc322922.chunk.js": "/static/js/492.cc322922.chunk.js",
+    "static/css/747.8a25a14f.chunk.css": "/static/css/747.8a25a14f.chunk.css",
+    "static/js/747.1d87012d.chunk.js": "/static/js/747.1d87012d.chunk.js",
+    "static/css/400.b15c822c.chunk.css": "/static/css/400.b15c822c.chunk.css",
+    "static/js/400.714c49f9.chunk.js": "/static/js/400.714c49f9.chunk.js",
+    "static/css/671.0fe390f4.chunk.css": "/static/css/671.0fe390f4.chunk.css",
+    "static/js/671.7a5aa6b1.chunk.js": "/static/js/671.7a5aa6b1.chunk.js",
+    "static/js/233.2b783f05.chunk.js": "/static/js/233.2b783f05.chunk.js",
+    "index.html": "/index.html",
+    "main.8bd363ac.css.map": "/static/css/main.8bd363ac.css.map",
+    "main.2ed819d0.js.map": "/static/js/main.2ed819d0.js.map",
+    "774.2ab82b2b.chunk.css.map": "/static/css/774.2ab82b2b.chunk.css.map",
+    "774.efe4360e.chunk.js.map": "/static/js/774.efe4360e.chunk.js.map",
+    "492.70b878c0.chunk.css.map": "/static/css/492.70b878c0.chunk.css.map",
+    "492.cc322922.chunk.js.map": "/static/js/492.cc322922.chunk.js.map",
+    "747.8a25a14f.chunk.css.map": "/static/css/747.8a25a14f.chunk.css.map",
+    "747.1d87012d.chunk.js.map": "/static/js/747.1d87012d.chunk.js.map",
+    "400.b15c822c.chunk.css.map": "/static/css/400.b15c822c.chunk.css.map",
+    "400.714c49f9.chunk.js.map": "/static/js/400.714c49f9.chunk.js.map",
+    "671.0fe390f4.chunk.css.map": "/static/css/671.0fe390f4.chunk.css.map",
+    "671.7a5aa6b1.chunk.js.map": "/static/js/671.7a5aa6b1.chunk.js.map",
+    "233.2b783f05.chunk.js.map": "/static/js/233.2b783f05.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bd363ac.css",
+    "static/js/main.2ed819d0.js"
+  ]
+}
