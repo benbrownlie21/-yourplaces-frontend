@@ -42,7 +42,7 @@ const NewPlace = () => {
 
   const history = useHistory();
 
-  const placeSubmitHandler = async (event) => {
+  const placeSubmitHandler = async event => {
     event.preventDefault();
     try {
       const formData = new FormData();
@@ -50,8 +50,8 @@ const NewPlace = () => {
       formData.append("description", formState.inputs.description.value);
       formData.append("address", formState.inputs.address.value);
       formData.append("image", formState.inputs.image.value);
-      await sendRequest(process.env.REACT_APP_BACKEND_URL + `/places`, "POST", formData, {
-        Authorization: "Bearer " + auth.token
+      await sendRequest(process.env.REACT_APP_BACKEND_URL + '/places', 'POST', formData, {
+        Authorization: 'Bearer ' + auth.token
       });
       history.push("/");
     } catch (err) {}
@@ -90,6 +90,9 @@ const NewPlace = () => {
         <ImageUpload id="image" onInput={inputHandler} />
         <Button inverse type="submit" disabled={!formState.isValid}>
           ADD PLACE
+        </Button>
+        <Button inverse to={`/${auth.userId}/places`}>
+            CANCEL
         </Button>
       </form>
     </React.Fragment>
